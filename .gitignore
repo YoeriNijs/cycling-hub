@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# IDEA
+.idea
+
+# Coverage
+coverage
+
+# Builds
+dist
