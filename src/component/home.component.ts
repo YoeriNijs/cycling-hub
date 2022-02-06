@@ -62,11 +62,11 @@ type BluetoothNavigator = Navigator & Bluetooth;
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ this._youtubeService.youtubeId }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        
+
         <div class="find-device">
-            <button @click="setYoutube">YouTube embed</button>
-            <button @click="searchHrDevices">Connect HR</button>
-            <button @click="searchPowerDevices">Connect Power</button>
+            <button class="uk-button uk-button-primary" @click="setYoutube">Insert YouTube link</button>
+            <button class="uk-button uk-button-default" @click="searchHrDevices">Connect HR</button>
+            <button class="uk-button uk-button-default" @click="searchPowerDevices">Connect Power</button>
         </div>
 
         <div class="charts">
@@ -129,7 +129,7 @@ export class HomeComponent {
         this.connectPower({ onChange: (event: any) => this.printPowerRate(event) })
             .catch((err: any) => {
                 console.error('Cannot connect power!', err);
-                alert('Cannot connect power sensor')
+                alert('Cannot connect power sensor!')
             });
     }
 

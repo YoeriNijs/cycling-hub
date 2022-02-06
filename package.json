@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "chart.js": "^3.7.0",
-    "vienna-ts": "^0.2.4"
+    "vienna-ts": "^0.2.26"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
